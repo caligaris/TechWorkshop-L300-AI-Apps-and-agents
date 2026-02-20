@@ -32,6 +32,16 @@
             "cwd" : "${workspaceFolder}/src",
             
             "args": ["chat_app:app","--reload", "--port", "8000"]
+        },
+        {
+            "name": "Python: Debug A2A Main",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/a2a/main.py",
+            "cwd": "${workspaceFolder}/src/a2a",
+            "envFile": "${workspaceFolder}/src/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
         }
     ]
 }
